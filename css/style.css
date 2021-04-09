@@ -1,8 +1,8 @@
 * {
     box-sizing: border-box;
-    font-size: 4vh;
     font-family: Arial, sans-serif;
-    font-weight: bold;
+    font-size: 4vh;
+    font-weight: 700;
 }
 
 html {
@@ -20,33 +20,23 @@ html {
 .wrapper header {
     background: #5E81AC;
     font-size: 2em;
-    margin: 1vh 1vw 1vh 1vw;
+    margin: 1vh 1vw;
     padding: 1vh 1vw;
 }
 
 .wrapper .textarea {
-    margin: 1vh 1vw 1vh 1vw;
-    justify-content: space-between;
     display: inline-flex;
+    justify-content: space-between;
+    margin: 1vh 1vw;
 }
 
 .wrapper .textarea input {
+    background: #ECEFF4;
     border: solid;
+    color: #2E3440;
     outline: none;
     padding: 1vh 1vw;
-    color: #2E3440;
-    background: #ECEFF4;
     width: 100%;
-}
-
-.wrapper .textarea button {
-    outline: none;
-    border: solid;
-    padding: 1vh 1vw;
-    margin-left: 1vw;
-    color: #2E3440;
-    background: #ECEFF4;
-    cursor: pointer;
 }
 
 .wrapper .textarea button:hover {
@@ -59,42 +49,28 @@ html {
 
 .wrapper ul {
     list-style: none;
-    margin: .5vh 1vw .5vh 1vw;
+    margin: .5vh 1vw;
     padding: 0;
 }
 
 .wrapper ul li {
-    justify-content: space-between;
     display: inline-flex;
-    margin: .5vh 0vw .5vh 0vw;
+    justify-content: space-between;
+    margin: .5vh 0;
     width: 100%;
 }
 
 .wrapper ul li span {
     background: #2E3440;
-    padding: 1vh 1vw;
     color: #ECEFF4;
-    width: 100%;
-}
-
-.wrapper ul li button {
-    outline: none;
-    border: solid;
     padding: 1vh 1vw;
-    margin-left: 1vw;
-    color: #2E3440;
-    background: #ECEFF4;
-    cursor: pointer;
-}
-
-.wrapper ul li button:hover {
-    background: #BF616A;
+    width: 100%;
 }
 
 .wrapper .footer {
     display: inline-flex;
     justify-content: space-between;
-    margin: 1vh 1vw 1vh 1vw;
+    margin: 1vh 1vw;
 }
 
 .wrapper .footer footer {
@@ -104,22 +80,32 @@ html {
 }
 
 .wrapper .footer button {
-    display: inline-flex;
     align-items: center;
-    outline: none;
-    border: solid;
-    padding: 1vh 1vw;
-    margin-left: 1vw;
-    color: #2E3440;
     background: #ECEFF4;
+    border: solid;
+    color: #2E3440;
     cursor: pointer;
+    display: inline-flex;
     font-size: .5em;
-}
-
-.wrapper .footer button:hover {
-    background: #BF616A;
+    margin-left: 1vw;
+    outline: none;
+    padding: 1vh 1vw;
 }
 
 .wrapper .footer button i {
-    margin: 0vh 1vw 0vh 0vw;
+    margin: 0 1vw 0 0;
+}
+
+.wrapper .textarea button, .wrapper ul li button {
+    background: #ECEFF4;
+    border: solid;
+    color: #2E3440;
+    cursor: pointer;
+    margin-left: 1vw;
+    outline: none;
+    padding: 1vh 1vw;
+}
+
+.wrapper ul li button:hover, .wrapper .footer button:hover {
+    background: #BF616A;
 }
