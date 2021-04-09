@@ -92,8 +92,8 @@ html {
 }
 
 .wrapper .footer {
-    justify-content: space-between;
     display: inline-flex;
+    justify-content: space-between;
     margin: 1vh 1vw 1vh 1vw;
 }
 
@@ -104,6 +104,8 @@ html {
 }
 
 .wrapper .footer button {
+    display: inline-flex;
+    align-items: center;
     outline: none;
     border: solid;
     padding: 1vh 1vw;
@@ -116,4 +118,8 @@ html {
 
 .wrapper .footer button:hover {
     background: #BF616A;
+}
+
+.wrapper .footer button i {
+    margin: 0vh 1vw 0vh 0vw;
 }
