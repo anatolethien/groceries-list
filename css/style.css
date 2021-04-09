@@ -1,61 +1,98 @@
-body {
-    display: flex;
+* {
     box-sizing: border-box;
-    background: #2E3440;
-    font-size: 2vh;
+    font-size: 4vh;
     font-family: Arial, sans-serif;
     font-weight: bold;
+}
+
+html {
+    background: #2E3440;
     color: #2E3440;
 }
 
-.paper {
-    position: relative;
-    margin: 5% auto;
-    box-shadow: 1vw 1vh 5vh #000000;
-    width: 70vw;
+.wrapper {
     background: #ECEFF4;
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 20vw;
 }
 
-.paper header {
+.wrapper header {
     background: #5E81AC;
-    margin: 2vh 2vw 2vh 2vw;
-    padding: 1vh 1vw 1vh 1vw;
-    font-size: 4em;
+    font-size: 2em;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
 }
-.paper input {
-    background: none;
-    margin: 0vh 2vw 0vh 2vw;
+
+.wrapper .add {
+    margin: 1vh 1vw;
+    justify-content: space-between;
+    display: inline-flex;
+}
+
+.wrapper .add input {
     border: solid;
     outline: none;
+    padding: 1vh 1vw;
+    color: #2E3440;
+    background: #ECEFF4;
     width: 100%;
-    padding: 1vh 1vw 1vh 1vw;
-    font-size: 2em;
+}
+
+.wrapper .add button {
+    outline: none;
+    border: solid;
+    padding: 1vh 1vw;
+    margin-left: 1vw;
+    color: #2E3440;
+    background: #ECEFF4;
+    cursor: pointer;
+}
+
+.wrapper .add button:hover {
+    background: #A3BE8C;
+}
+
+.wrapper input::placeholder {
     color: #2E3440;
 }
 
-.paper input::placeholder {
-    font-size: 1em;
-    font-weight: bold;
-    color: #2E3440;
-}
-
-.paper ul {
-    margin: 0vh 2vw 0vh 2vw;
-    padding: 0vh 0vw 0vh 0vw;
-}
-
-.paper ul li {
-    background: #2E3440;
-    margin: 1vh 0vw 1vh 0vw;
-    padding: 1vh 1vw 1vh 1vw;
-    font-size: 2em;
+.wrapper ul {
     list-style: none;
-    color: #ECEFF4;
+    margin: 1vh 1vw 0vh 1vw;
+    padding: 0;
 }
 
-.paper footer {
+.wrapper ul li {
+    justify-content: space-between;
+    display: inline-flex;
+    margin: 0vh 0vw 0vh 0vw;
+    width: 100%;
+}
+
+.wrapper ul li .list {
+    background: #2E3440;
+    padding: 1vh 1vw;
+    color: #ECEFF4;
+    width: 100%;
+}
+
+.wrapper ul li button {
+    outline: none;
+    border: solid;
+    padding: 1vh 1vw;
+    margin-left: 1vw;
+    color: #2E3440;
+    background: #ECEFF4;
+    cursor: pointer;
+}
+
+.wrapper ul li button:hover {
+    background: #BF616A;
+}
+
+.wrapper footer {
     background: #5E81AC;
-    margin: 2vh 2vw 2vh 2vw;
-    padding: 1vh 1vw 1vh 1vw;
-    font-size: 2em;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
 }
