@@ -2,49 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gulo - Groceries list</title>
+    <title>Groceries list</title>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://css.gg/css' rel='stylesheet'>
 </head>
 <body>
 <div class="wrapper">
     <header>Groceries list</header>
-    <div class="textarea">
-        <input type="text" placeholder="Add an article!">
-        <button>
-            <i class="gg-math-plus"></i>
-        </button>
-    </div>
-    <ul>
+    <form>
+        <input type="text" placeholder="Add an article!" id="new_article">
+        <button onclick="add_new_article();"><i class="gg-math-plus"></i></button>
+    </form>
+    <ul id="article_list">
         <li>
             <span>Bread</span>
-            <button>
-                <i class="gg-math-minus"></i>
-            </button>
+            <button type="submit"><i class="gg-math-minus"></i></button>
         </li>
         <li>
             <span>Chips</span>
-            <button>
-                <i class="gg-math-minus"></i>
-            </button>
+            <button type="submit"><i class="gg-math-minus"></i></button>
         </li>
         <li>
-            <span>Hame</span>
-            <button>
-                <i class="gg-math-minus"></i>
-            </button>
+            <span>Ham</span>
+            <button type="submit"><i class="gg-math-minus"></i></button>
         </li>
         <li>
             <span>Lemonade</span>
-            <button>
-                <i class="gg-math-minus"></i>
-            </button>
+            <button type="submit"><i class="gg-math-minus"></i></button>
         </li>
         <li>
             <span>Sweets</span>
-            <button>
-                <i class="gg-math-minus"></i>
-            </button>
+            <button type="submit"><i class="gg-math-minus"></i></button>
         </li>
     </ul>
     <div class="footer">
@@ -54,5 +42,6 @@
         </button>
     </div>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>

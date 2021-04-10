@@ -24,13 +24,13 @@ html {
     padding: 1vh 1vw;
 }
 
-.wrapper .textarea {
+.wrapper form {
     display: inline-flex;
     justify-content: space-between;
     margin: 1vh 1vw;
 }
 
-.wrapper .textarea input {
+.wrapper form input {
     background: #ECEFF4;
     border: solid;
     color: #2E3440;
@@ -39,11 +39,11 @@ html {
     width: 100%;
 }
 
-.wrapper .textarea button:hover {
+.wrapper form button:hover {
     background: #A3BE8C;
 }
 
-.wrapper input::placeholder {
+.wrapper form input::placeholder {
     color: #2E3440;
 }
 
@@ -96,7 +96,7 @@ html {
     margin: 0 1vw 0 0;
 }
 
-.wrapper .textarea button, .wrapper ul li button {
+.wrapper form button, .wrapper ul li button {
     background: #ECEFF4;
     border: solid;
     color: #2E3440;
