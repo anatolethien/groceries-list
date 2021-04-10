@@ -9,17 +9,15 @@
 <body>
 <div class="wrapper">
     <header>Groceries list</header>
-    <form>
+    <form onsubmit="add_item(); return false;">
         <input type="text" placeholder="Add an article!" id="new_item">
-        <button onclick="add_new_item();" type="button"><i class="gg-math-plus"></i></button>
+        <button onclick="add_item();" type="button"><i class="gg-math-plus"></i></button>
     </form>
     <ul id="item_list">
     </ul>
     <div class="footer">
         <footer>You have 5 articles</footer>
-        <button>
-            <i class="gg-trash"></i>Clean
-        </button>
+        <button onclick="clean_item_list();"><i class="gg-trash"></i>Clean</button>
     </div>
 </div>
 <script src="js/script.js"></script>
