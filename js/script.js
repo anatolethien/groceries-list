@@ -1,20 +1,26 @@
 // Import list from HTML document
-let item_list = ["Bread", "Chips", "Ham", "Lemonade", "Sweets"];
+let item_list = [];
 
 function get_item_list() {
 
 }
 
 function add_item() {
-    let new_item = document.getElementById("new_item");
-    if (new_item.value !== "") {
-        item_list.push(new_item.value);
-        console.log("Adding new_item = \"" + new_item.value + "\" to item_list");
-        new_item.value = "";
+    let item = document.getElementById("new_item");
+    if (item.value !== "") {
+        item_list.push(item.value);
+        console.log("Adding \"" + item.value + "\" at item_list[" + (item_list.length - 1) + "]");
+        item.value = "";
     } else {
         alert("Error: empty string.");
         console.log("Error: empty string.");
     }
+    display_item_list();
+}
+
+function remove_item(item) {
+    console.log("Removing \"" + item_list[item] + "\" from item_list[" + item + "]");
+    item_list.splice(item, 1);
     display_item_list();
 }
 
@@ -26,15 +32,16 @@ function clean_item_list() {
 
 function display_item_list() {
     let element = document.getElementById("item_list");
-    let data = "";
+    let li = "";
     if (item_list.length > 0) {
-        for (current_item in item_list) {
-            data += "<li><span>" + item_list[current_item] + "</span><button type=\"submit\" id=\"remove_item\"><i class=\"gg-math-minus\"></i></button></li>";
+        for (item in item_list) {
+            li += "<li><span>" + item_list[item] + "</span><button type=\"submit\" onclick=\"remove_item(" + item + ")\"><i class=\"gg-math-minus\"></i></button></li>";
         }
     } else {
-        data = "<li><span>No article yet!</span><button type=\"submit\" id=\"remove_item\"><i class=\"gg-math-minus\"></i></button></li>";
+        li = "<li><span>No article yet!</span></li>";
     }
-    return element.innerHTML = data;
+    console.log("Displaying item_list = " + item_list);
+    return element.innerHTML = li;
 }
 
 display_item_list();
