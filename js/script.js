@@ -30,7 +30,13 @@ function clean_item_list() {
     display_item_list();
 }
 
+function item_number() {
+    let item_number = item_list.length;
+    document.getElementById("item_number").innerHTML = String(item_number);
+}
+
 function display_item_list() {
+    item_number();
     let element = document.getElementById("item_list");
     let li = "";
     if (item_list.length > 0) {
