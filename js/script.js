@@ -1,9 +1,4 @@
-// Import list from HTML document
 let item_list = [];
-
-function get_item_list() {
-
-}
 
 function add_item() {
     let item = document.getElementById("new_item");
